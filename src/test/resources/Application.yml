@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  
+employee:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/employeedata
+    username: shubhneet
+    password: shubh
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: UTC
+    show-sql: true
+    hibernate:
+      ddl-auto: none 
+      
