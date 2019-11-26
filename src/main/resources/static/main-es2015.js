@@ -32,7 +32,7 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<router-outlet></router-outlet>\n<!-- <div app-employee-create></div> -->");
+/* harmony default export */ __webpack_exports__["default"] = ("<router-outlet></router-outlet>");
 
 /***/ }),
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"toolbar\" role=\"banner\">\n    <span>Add Employee</span>\n</div>\n\n<div class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"alert alert-danger col-md-6 errorMes\" *ngIf=\"isNameEmpty\">Please fill the below fields\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-md-9\">\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>First Name</label>\n                </div>\n                <div class=\"col-md-6\">\n                    <input [ngClass]=\"{emptyField: isNameEmpty}\" type=\"text\" class=\"form-control\" required=\"\" #fName />\n                </div>\n            </div>\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>Last Name</label>\n                </div>\n                <div class=\"col-md-6\">\n                    <input [ngClass]=\"{emptyField: isNameEmpty}\" type=\"text\" class=\"form-control\" required=\"\" #lName />\n                </div>\n            </div>\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>Gender</label>\n                </div>\n                <div class=\"col-md-6\" style=\"display: inline-block;\">\n                    <div class=\"radioButton\">\n                        <label style=\"margin-right:10px;\">Female</label>\n                        <input  [(ngModel)]=\"gender\" type=\"radio\" name=\"radiogroup\" value=\"female\" [checked]=\"true\"\n                            />\n                    </div>\n                    <div class=\"radioButton\">\n                        <label style=\"margin-right:10px;\">Male</label>\n                        <input [(ngModel)]=\"gender\" type=\"radio\" name=\"radiogroup\" value=\"male\"  />\n                    </div>\n                    <div class=\"radioButton\">\n                        <label style=\"margin-right:10px;\">Others</label>\n                        <input [(ngModel)]=\"gender\" type=\"radio\" name=\"radiogroup\" value=\"others\" />\n                    </div>\n                </div>\n            </div>\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>Department</label>\n                </div>\n                <div class=\"col-md-6\">\n                    <input type=\"text\" class=\"form-control\" #dep />\n                </div>\n            </div>\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>Date of Birth</label>\n                </div>\n                <div class=\"col-md-3\">\n                    <!-- <input type=\"text\" class=\"form-control\" #dob /> -->\n                    <ejs-datepicker id='datepicker' placeholder='Select a date' format='yyyy-MM-dd' [(value)]='dateValue'\n                        [min]='minDate' [max]='maxDate'></ejs-datepicker>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"row marginTop\">\n        <button class=\"btn btn-primary btn-lg\" style=\"margin-left: 10px;\"\n            (click)=\"addEmployee(fName,lName,dep,dob)\">Save</button>\n        <button class=\"btn btn-primary btn-lg\" style=\"margin-left: 10px;\"\n            (click)=\"goBackToEmployee()\">Back</button>\n    </div>\n\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"toolbar\" role=\"banner\">\n    <span>Add Employee</span>\n</div>\n\n<div class=\"container-fluid\">\n    <div class=\"row\">\n        <div class=\"alert alert-danger col-md-6 errorMes\" *ngIf=\"isNameEmpty\">Please fill the below fields\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-md-9\">\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>First Name</label>\n                </div>\n                <div class=\"col-md-6\">\n                    <input [ngClass]=\"{emptyField: isNameEmpty}\" type=\"text\" class=\"form-control\" required=\"\" #fName />\n                </div>\n            </div>\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>Last Name</label>\n                </div>\n                <div class=\"col-md-6\">\n                    <input [ngClass]=\"{emptyField: isNameEmpty}\" type=\"text\" class=\"form-control\" required=\"\" #lName />\n                </div>\n            </div>\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>Gender</label>\n                </div>\n                <div class=\"col-md-6\" style=\"display: inline-block;\">\n                    <div class=\"radioButton\">\n                        <label style=\"margin-right:10px;\">Female</label>\n                        <input  [(ngModel)]=\"gender\" type=\"radio\" name=\"radiogroup\" value=\"female\"\n                            />\n                    </div>\n                    <div class=\"radioButton\">\n                        <label style=\"margin-right:10px;\">Male</label>\n                        <input [(ngModel)]=\"gender\" type=\"radio\" name=\"radiogroup\" value=\"male\"  />\n                    </div>\n                    <div class=\"radioButton\">\n                        <label style=\"margin-right:10px;\">Others</label>\n                        <input [(ngModel)]=\"gender\" type=\"radio\" name=\"radiogroup\" value=\"others\" />\n                    </div>\n                </div>\n            </div>\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>Department</label>\n                </div>\n                <div class=\"col-md-6\">\n                    <input type=\"text\" class=\"form-control\" #dep />\n                </div>\n            </div>\n            <div class=\"row marginTop\">\n                <div class=\"col-md-3\">\n                    <label>Date of Birth</label>\n                </div>\n                <div class=\"col-md-3\">\n                    <ejs-datepicker id='datepicker' placeholder='Select a date' format='yyyy-MM-dd' [(value)]='dateValue'\n                        [min]='minDate' [max]='maxDate'></ejs-datepicker>\n                </div>\n            </div>\n        </div>\n    </div>\n    <div class=\"row marginTop\">\n        <button class=\"btn btn-primary btn-lg\" style=\"margin-left: 10px;\"\n            (click)=\"addEmployee(fName,lName,dep,dob)\">Save</button>\n        <button class=\"btn btn-primary btn-lg\" style=\"margin-left: 10px;\"\n            (click)=\"goBackToEmployee()\">Back</button>\n    </div>\n\n</div>");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"toolbar\" role=\"banner\">\n    <span>Employee List</span>\n</div>\n<div class=\"container-fluid\">\n    <div class=\"row marginTop\" style=\"margin-left: 0%;\">\n        <h4>Add Employee</h4>\n        <button class=\"btn btn-primary\" style=\"margin-left: 10px;\" (click)=\"goToAddEmployee()\">Add Employee</button>\n    </div>\n    <div>\n        <table class=\"table-striped table marginTop\">\n            <thead>\n                <tr>\n                    <th>First Name</th>\n                    <th>Last Name</th>\n                    <th>Gender</th>\n                    <th>Departmant</th>\n                    <th>Date of birth</th>\n                </tr>\n            </thead>\n            <tbody>\n                <tr *ngFor=\"let item of employeeList | paginate: { itemsPerPage: 9, currentPage: page }\">\n                    <td *ngFor=\"let value of item | values\">\n                        {{ value }}\n                    </td>\n                </tr>\n\n            </tbody>\n        </table>\n        <div class=\"div_pagination\">\n            <pagination-controls previousLabel=\"\" nextLabel=\"\" maxSize=\"5\" (pageChange)=\"page = $event\">\n            </pagination-controls>\n        </div>\n    </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"toolbar\" role=\"banner\">\r\n    <span>Employee List</span>\r\n</div>\r\n<div class=\"container-fluid\">\r\n    <div class=\"row marginTop\" style=\"margin-left: 0%;\">\r\n        <h4>Add Employee</h4>\r\n        <button class=\"btn btn-primary\" style=\"margin-left: 10px;\" (click)=\"goToAddEmployee()\">Add Employee</button>\r\n    </div>\r\n    <div>\r\n        <table class=\"table-striped table marginTop\">\r\n            <thead>\r\n                <tr>\r\n                    <th>First Name</th>\r\n                    <th>Last Name</th>\r\n                    <th>Gender</th>\r\n                    <th>Departmant</th>\r\n                    <th>Date of birth</th>\r\n                </tr>\r\n            </thead>\r\n            <tbody>\r\n                <tr *ngFor=\"let item of employeeList | paginate: { itemsPerPage: 9, currentPage: page }\">\r\n                    <td *ngFor=\"let value of item | values\">\r\n                        {{ value }}\r\n                    </td>\r\n                </tr>\r\n\r\n            </tbody>\r\n        </table>\r\n        <div class=\"div_pagination\">\r\n            <pagination-controls previousLabel=\"\" nextLabel=\"\" maxSize=\"5\" (pageChange)=\"page = $event\">\r\n            </pagination-controls>\r\n        </div>\r\n    </div>");
 
 /***/ }),
 
@@ -502,6 +502,7 @@ let EmployeeCreateComponent = class EmployeeCreateComponent {
         this.employeeService = employeeService;
         this.router = router;
         this.route = route;
+        this.gender = "female";
         this.isNameEmpty = false;
         this.minDate = new Date("01/01/1970");
         this.maxDate = new Date();
@@ -509,13 +510,14 @@ let EmployeeCreateComponent = class EmployeeCreateComponent {
     ngOnInit() {
     }
     addEmployee(fname, lname, dep) {
-        debugger;
         if (fname.value == "" || lname.value == "") {
             this.isNameEmpty = true;
         }
         else {
-            this.date = this.dateValue.getFullYear() + "-" + this.dateValue.getMonth() + "-" + this.dateValue.getDate();
-            this.empModel = new _employee_create_model__WEBPACK_IMPORTED_MODULE_2__["EmployeeModel"](fname.value, lname.value, this.gender, dep.value, this.date.toString());
+            if (this.dateValue) {
+                this.date = this.dateValue.getFullYear() + "-" + this.dateValue.getMonth() + "-" + this.dateValue.getDate();
+            }
+            this.empModel = new _employee_create_model__WEBPACK_IMPORTED_MODULE_2__["EmployeeModel"](fname.value, lname.value, this.gender, dep.value, this.date);
             this.employeeService.saveEmployee(this.empModel).subscribe((res) => {
                 console.log("employee is created");
                 this.router.navigate(['']);
@@ -655,12 +657,8 @@ let EmployeeService = class EmployeeService {
     }
     getAllEmployee() {
         return this.httpService.get('http://localhost:8080/employee/details');
-        //.pipe(map(data => data));
     }
     saveEmployee(empModel) {
-        debugger;
-        // let headers = new HttpHeaders({ 'Content-Type': 'application/json', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST' });
-        // let options = { headers: headers, crossDomain: true };
         return this.httpService.post('http://localhost:8080/employee/details', empModel);
     }
 };
@@ -742,7 +740,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\shubhneetkaur\Desktop\notes\EmployeePortal\employeeportal\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\shubhneetkaur\Desktop\notes\EmployeePortal\g\EmployeePortal\src\main.ts */"./src/main.ts");
 
 
 /***/ })
