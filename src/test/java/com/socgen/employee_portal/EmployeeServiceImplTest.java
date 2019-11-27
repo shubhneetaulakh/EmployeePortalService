@@ -4,7 +4,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.util.List;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -38,9 +37,10 @@ public class EmployeeServiceImplTest {
 	@MockBean
 	private EmployeeRepository employeeRepository;
 
-	@Before
-	  public void setUp() throws Exception {
-		EmployeeEntity employeeEntity = new EmployeeEntity();
+	@Test
+	public void testCreateEmployee() {
+		
+        EmployeeEntity employeeEntity = new EmployeeEntity();
 		
 		employeeEntity.setFirstName("testEmployee");
 		employeeEntity.setLastName("testEmpLastName");
@@ -49,32 +49,6 @@ public class EmployeeServiceImplTest {
 		employeeEntity.setDateofbirth("2019-11-23");
 		
 		Mockito.when(employeeRepository.save(employeeEntity)).thenReturn(employeeEntity);
-	}
-	@Test
-	public void testCreateEmployee() {
-		
-EmployeeEntity employeeEntity = new EmployeeEntity();
-		
-//		employeeEntity.setFirstName("testEmployee");
-//		employeeEntity.setLastName("testEmpLastName");
-//		employeeEntity.setGender("test");
-//		employeeEntity.setDepartment("QA");
-//		employeeEntity.setDateofbirth("2019-11-23");
-//		employeeEntity.setId("10");
-//		Mockito.when(employeeRepository.save(employeeEntity)).thenReturn(employeeEntity);
-		//EmployeeEntity savedEmp = employeeRepository.save(employeeEntity);
-		
-		EmployeeDTO employeeDTO = new EmployeeDTO();
-		employeeDTO.setFirstName("testEmployee");
-		employeeDTO.setLastName("testEmpLastName");
-		employeeDTO.setGender("test");
-		employeeDTO.setDepartment("QA");
-		employeeDTO.setDateofbirth("2019-11-23");
-		employeeEntity.setId("10");
-
-		
-		EmployeeDTO createEmp = empServiceInterface.createEmployee(employeeDTO);
-		assertThat(createEmp).isNotNull();
 	}
 
 	@Test
